@@ -3,6 +3,7 @@ GitHub :  https://github.com/gopel
 
 # Versions 
 
+ClonalPop: `1.0
 SPAdes :  `3.13.0`  
 Unicycler : `0.4.7`  
 Prokka : `1.13`  
