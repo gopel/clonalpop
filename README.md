@@ -10,7 +10,7 @@ Breseq : `0.33.2`
 
 # Installation
 
-## With Docker (the easiest) 
+## With Docker (the easiest way) 
 
 ### Download and install Docker on your machine :  
 https://www.docker.com/products/docker-desktop  
@@ -24,7 +24,9 @@ docker pull gopel/clonalpop
 brew
 
 # Usage 
-`docker run gopel/clonalpop path/to/input/file path/to/output/file`   
+```
+docker run gopel/clonalpop path/to/input/file path/to/output/file
+```   
 
 At the end of the pipeline, all the intermediary files are automatically supressed. To keep one, add :  
 SPAdes :  `spades`    
@@ -33,31 +35,43 @@ Prokka : `prokka`
 Breseq : `breseq`      
 
 For example, to keep comparison files :   
-`docker run gopel/clonalpop path/to/input/file path/to/output/file breseq`
+```
+docker run gopel/clonalpop path/to/input/file path/to/output/file breseq
+```
 
 # Hijack the pipeline
 
 ### Assembly pipeline
 
 To assemble Illumina reads :    
-`docker run gopel/clonalpop path/to/input/file path/to/output/file spades`  
+```
+docker run gopel/clonalpop path/to/input/file path/to/output/file spades
+``` 
 
 To assemble Nanopore files with associated Illumina reads :    
-`docker run gopel/clonalpop path/to/input/file path/to/output/file unicycler`  
+```
+docker run gopel/clonalpop path/to/input/file path/to/output/file unicycler
+```  
 
 ### Annotation pipeline
 
 Give the files you want to annotate with the extension '_reference', then enter :    
- `docker run gopel/clonalpop path/to/input/file path/to/output/file prokka`
+ ```
+docker run gopel/clonalpop path/to/input/file path/to/output/file prokka
+```
 
 ### Characterisation pipeline
 
 To characterise a file' reference content :  
- `docker run gopel/clonalpop path/to/input/file path/to/output/file abricate`
+ ```
+docker run gopel/clonalpop path/to/input/file path/to/output/file abricate
+```
 
 ### Comparison pipeline
 
 To keep the comparison files :   
- `docker run gopel/clonalpop path/to/input/file path/to/output/file breseq`
+ ```
+docker run gopel/clonalpop path/to/input/file path/to/output/file breseq
+```
  
  
