@@ -16,7 +16,8 @@ Breseq : `0.33.2`
 https://www.docker.com/products/docker-desktop  
 
 ### Download this image (copy/paste in your Terminal) :  
-```docker pull gopel/clonalpop  
+```
+docker pull gopel/clonalpop  
 ```
 
 ## Without docker
