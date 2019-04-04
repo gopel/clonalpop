@@ -45,19 +45,9 @@ RUN ./abricate/bin/abricate ./abricate/test/assembly.fa
 RUN wget https://github.com/barricklab/breseq/releases/download/v0.33.2/breseq-0.33.2-Linux-x86_64.tar.gz && tar -zxvf breseq-0.33.2-Linux-x86_64.tar.gz && rm -rf v0.8.7.tar.gz
 ENV PATH="./breseq-0.33.2-Linux-x86_64/bin:$PATH"
 
-# Unicycler
-###RUN git clone https://github.com/rrwick/Unicycler.git
-###RUN python3 Unicycler/setup.py install
-
 #Spades 
 RUN wget https://github.com/ablab/spades/releases/download/v3.13.0/SPAdes-3.13.0-Linux.tar.gz && tar -zxvf SPAdes-3.13.0-Linux.tar.gz && rm -rf SPAdes-3.13.0-Linux.tar.gz
 RUN PATH="./SPAdes-3.13.0-Linux/bin:$PATH"
-
-#Prokka
-# apt-get install libdatetime-perl libxml-simple-perl libdigest-md5-perl git default-jre bioperl
-#RUN  cpan Bio::Perl
-#RUN git clone https://github.com/tseemann/prokka.git $HOME/prokka
-#RUN $HOME/prokka/bin/prokka --setupdb
 
 # Linuxbrew
 RUN apt-get update \
