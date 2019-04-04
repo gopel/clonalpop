@@ -16,7 +16,8 @@ Breseq : `0.33.2`
 https://www.docker.com/products/docker-desktop  
 
 ### Download this image (copy/paste in your Terminal) :  
-```docker pull gopel/clonalpop```
+```  
+docker pull gopel/clonalpop```
 
 ## Without docker
 brew
@@ -59,5 +60,3 @@ To keep the comparison files :
  `docker run gopel/clonalpop path/to/input/file path/to/output/file breseq`
  
  
- ```ddd   
- ddd```
