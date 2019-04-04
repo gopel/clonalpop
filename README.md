@@ -35,9 +35,7 @@ Prokka : `prokka`
 Breseq : `breseq`      
 
 For example, to keep comparison files :   
-```
-docker run gopel/clonalpop path/to/input/file path/to/output/file breseq
-```
+`docker run gopel/clonalpop path/to/input/file path/to/output/file breseq`
 
 # Hijack the pipeline
 
